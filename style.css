@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+.navigation h3 {
+  font-size: 1.3rem;
+}
+.navigation {
+  padding: 1rem;
+  background-color: #d97706;
+  margin-top: 0px;
+  border-bottom-left-radius: 2rem;
+  color: white;
+}
+.navigation .active {
+  font-weight: bolder;
+}
+.navigation ul {
+  text-align: right;
+  list-style: none;
+}
+.navigation ul li {
+  padding: 1rem 1rem;
+  display: inline;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+.hero img {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 1rem;
+}
+.hero h1 {
+  margin: 1rem 0rem;
+  text-align: center;
+  color: #374151;
+}
+.primary-color {
+  color: #d97706;
+}
+.section {
+  padding: 0.4rem;
+}
+.section p {
+  margin-bottom: 1rem;
+}
+.container {
+  margin: auto;
+  max-width: 600px;
+  padding: 1rem 1rem;
+}
+.bgow {
+  background-color: #fef3c7;
+}
+
+.section h2 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.primary-btn {
+  text-decoration: none;
+  background-color: #d97706;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.7rem;
+}
+
+.secondary-btn {
+  text-decoration: none;
+  border: #d97706 0.1rem solid;
+  color: #d97706;
+  padding: 0.4rem 1rem;
+  border-radius: 0.7rem;
+}
+
+.footer {
+  background-color: #d97706;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-top-right-radius: 1rem;
+}
+.footer p {
+  font-weight: bolder;
+}
+.footer ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  padding: 1rem;
+}
+.footer li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
