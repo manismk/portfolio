@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
-* {
-  margin: 0;
-}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: black;
+  margin: 0;
 }
+
 .navigation h3 {
   font-size: 1.3rem;
 }
@@ -24,7 +24,7 @@ body {
   list-style: none;
 }
 .navigation ul li {
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   display: inline;
 }
 
@@ -39,7 +39,6 @@ body {
   margin-top: 1rem;
 }
 .hero h1 {
-  margin: 1rem 0rem;
   text-align: center;
   color: #374151;
 }
@@ -49,9 +48,7 @@ body {
 .section {
   padding: 0.4rem;
 }
-.section p {
-  margin-bottom: 1rem;
-}
+
 .container {
   margin: auto;
   max-width: 600px;
@@ -63,7 +60,7 @@ body {
 
 .section h2 {
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.4rem 0;
 }
 
 .primary-btn {
@@ -79,15 +76,15 @@ body {
   border: #d97706 0.1rem solid;
   color: #d97706;
   padding: 0.4rem 1rem;
-  border-radius: 0.7rem;
+  border-radius: 1rem;
 }
 
 .footer {
   background-color: #d97706;
   color: white;
-  padding: 1rem;
+  padding: 0.4rem;
   text-align: center;
-  border-top-right-radius: 1rem;
+  border-top-right-radius: 2rem;
 }
 .footer p {
   font-weight: bolder;
@@ -105,4 +102,17 @@ body {
 .footer a {
   text-decoration: none;
   color: white;
+}
+ol li {
+  list-style: none;
+}
+.article {
+  padding: 1rem;
+}
+.article h2 {
+  margin: 0.8rem 0;
+}
+
+.article p {
+  margin: 0.8rem 0;
 }
