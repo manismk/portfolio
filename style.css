@@ -116,3 +116,8 @@ ol li {
 .article p {
   margin: 0.8rem 0;
 }
+.blogImage {
+  display: block;
+  max-width: 200px;
+  margin: auto;
+}
