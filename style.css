@@ -53,6 +53,7 @@ body {
   margin: auto;
   max-width: 600px;
   padding: 1rem 1rem;
+  border-radius: 1rem;
 }
 .bgow {
   background-color: #fef3c7;
