@@ -76,6 +76,7 @@ body {
   padding: 0.4rem 1rem;
   border-radius: 0.7rem;
   transition: all 0.5s;
+  margin: 0.5rem;
 }
 
 .primary-btn:hover {
@@ -90,6 +91,8 @@ body {
   color: var(--primary);
   padding: 0.4rem 1rem;
   border-radius: 1rem;
+  transition: all 0.5s;
+  margin: 0 0.5rem;
 }
 
 .secondary-btn:hover {
