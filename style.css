@@ -76,7 +76,7 @@ body {
   padding: 0.4rem 1rem;
   border-radius: 0.7rem;
   transition: all 0.5s;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
 }
 
 .primary-btn:hover {
@@ -92,7 +92,7 @@ body {
   padding: 0.4rem 1rem;
   border-radius: 1rem;
   transition: all 0.5s;
-  margin: 0 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .secondary-btn:hover {
@@ -129,6 +129,9 @@ ol li {
 }
 .article {
   padding: 1rem;
+}
+.article:nth-child(even) .container {
+  background-color: #fde68a;
 }
 .article h2 {
   margin: 0.8rem 0;
