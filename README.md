@@ -1,2 +1,2 @@
 # portfolio
-This is just my sample portfolio
+This is sample portfolio for neog camp.
