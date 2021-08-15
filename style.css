@@ -145,3 +145,11 @@ ol li {
   max-width: 200px;
   margin: auto;
 }
+pre code {
+  background-color: #eee;
+  color: #444;
+  display: block;
+  padding: 1rem;
+  overflow: auto;
+  border-radius: 10px;
+}
