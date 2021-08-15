@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to make button accessible.</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <h3>Manikandan</h3>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a class="active" href="../blogs.html">Blogs</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <h1 class="page-title">How to make a button accessible?</h1>
+        <p>
+          Before going how to make a button accessible? Please take look at my
+          <a href="/blogs/what_accessibility.html">previous blog</a> about
+          accessibility.
+        </p>
+        <p>
+          I have chosen first to cover making button accessible because as the
+          button is the main call to action for a website and we use more no of
+          buttons in the website.
+        </p>
+        <h3>By using the button tag.</h3>
+        <p>
+          Button tag is an easy and simple way to make buttons accessible.While
+          using the button tag the tab focus and role of a button are
+          automatically assigned to a button.
+        </p>
+        <pre>
+          <code>&lt;button&gt;Help&lt;/button&gt;</code>
+        </pre>
+        <h3>Making link as accessible button</h3>
+        <p>
+          To make the link accessible we need to add role='button' for the link,
+          this will be helpful for screen reader users as it will convey as a
+          button.
+        </p>
+        <pre>
+          <code>&lt;a href='https://www.google.com/' target='_blank' role='button' class='btn'&gt;Google&lt;/a&gt;</code>
+        </pre>
+        <h3>Making icon as an accessible button.</h3>
+        <p>
+          Enclose the icon within the button tag and aria-label='label name' for
+          the icon button. Since the icon button doesn't have a visual label. If
+          we do not provide the label it will just say a button for the screen
+          reader users. So we should provide the label for it. Similarly, you
+          can make the image as a button.
+        </p>
+        <pre>
+          <code>&lt;button class='btn' aria-label='Help' onclick='showalert()'&gt;&lt;i class="fas fa-question-circle" &gt;&lt;/i&gt;&lt;/button&gt;</code>
+        </pre>
+        <h3>Making div as accessible button.</h3>
+        <p>
+          To make div as button we need add role as button to convey it as
+          button . To give the keyboard tab focus we need to add tabindex as 0.
+        </p>
+        <pre>
+          <code>&lt;div id='divButton' onclick='showalert()' tabindex='0' class='btn' role='button' &gt;Help&lt;/div&gt;</code>
+        </pre>
+        <p>
+          Apart from this, we need to add the following javascript code to
+          access it using the keyboard enter or space key.
+        </p>
+        <pre>
+          <code>var divButton=document.querySelector('#divButton');
+
+divButton.addEventListener("keydown", e => {
+if (e.key === " " || e.key === "Enter" || e.key === "Spacebar")
+{
+divButton.click();
+}
+});</code>
+        </pre>
+        <p>
+          We have added the key down event listeners for the Spacebar and enter
+          key and we made a click action using the javascript click function.
+        </p>
+        <p>
+          Take a look into the examples on
+          <a
+            href="https://codepen.io/manismk/pen/LYyvQXw?editors=0000"
+            target="_blank"
+            >codepen</a
+          >.
+        </p>
+        <p>These are the ways how we can make the button accessible.</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Connect to me</p>
+      <ul>
+        <li><a href="https://github.com/manismk">Github</a></li>
+        <li><a href="https://twitter.com/_manismk">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/manismk/">Linkedin</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
