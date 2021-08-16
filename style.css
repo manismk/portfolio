@@ -153,3 +153,49 @@ pre code {
   overflow: auto;
   border-radius: 10px;
 }
+
+.badge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 0.05rem 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.badge-html {
+  background: #e34c26;
+  color: #fff;
+}
+
+.badge-css {
+  background: #264de4;
+  color: #fff;
+}
+
+.badge-js {
+  background: #f0db4f;
+  color: #323330;
+}
+.badge-react {
+  background: #1f232a;
+  color: #60dafb;
+}
+.badge-firebase {
+  background: #ffa611;
+  color: #323330;
+}
+.badge-github {
+  background: #211f1f;
+  color: #fff;
+}
+.badge-git {
+  background: #f1502f;
+  color: #fff;
+}
+.badge-netlify {
+  background: #00c7b7;
+  color: #0e1e25;
+}
+
+.b-2x {
+  font-size: 0.9rem;
+}
