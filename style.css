@@ -18,9 +18,16 @@ body {
   margin-top: 0px;
   border-bottom-left-radius: 2rem;
   color: white;
+
+  transition: border-bottom 0.3s;
 }
 .navigation .active {
   font-weight: bolder;
+
+  border-bottom: 1px solid white;
+}
+.navigation a:hover {
+  border-bottom: 1px solid white;
 }
 .navigation ul {
   text-align: right;
@@ -32,6 +39,7 @@ body {
 }
 
 .navigation a {
+  padding-bottom: 0.25rem;
   text-decoration: none;
   color: white;
 }
@@ -47,9 +55,6 @@ body {
 }
 .primary-color {
   color: var(--primary);
-}
-.section {
-  padding: 0.4rem;
 }
 
 .container {
@@ -131,7 +136,10 @@ ol li {
   padding: 1rem;
 }
 .article:nth-child(even) .container {
-  background-color: #fde68a;
+  background-color: #fcd34d;
+}
+.article:nth-child(odd) .container {
+  background-color: #fef3c7;
 }
 .article h2 {
   margin: 0.8rem 0;
