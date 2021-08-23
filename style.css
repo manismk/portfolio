@@ -144,7 +144,13 @@ ol li {
 .article h2 {
   margin: 0.8rem 0;
 }
-
+p a {
+  color: var(--primary);
+}
+p a:hover {
+  background-color: var(--primary);
+  color: white;
+}
 .article p {
   margin: 0.8rem 0;
 }
