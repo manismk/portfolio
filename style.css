@@ -1,13 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Licorice&family=Pacifico&family=Rubik+Beastly&family=Sacramento&family=Shizuru&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 :root {
   --primary: #d97706;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: black;
   margin: 0;
   background-color: #fffbeb;
+  font-size: 1.1rem;
 }
 
 .navigation h2 {
@@ -62,18 +63,22 @@ body {
   text-decoration: none;
   color: white;
 }
-.hero img {
-  display: block;
-  max-width: 300px;
-  margin: auto;
-  margin-top: 1rem;
+
+.hero {
+  margin: 5rem 0;
 }
-.hero h1 {
+
+.hero h1,
+.hero h2 {
   text-align: center;
   color: #374151;
 }
 .primary-color {
   color: var(--primary);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .container {
@@ -192,6 +197,7 @@ pre code {
   text-transform: uppercase;
   padding: 0.05rem 0.4rem;
   border-radius: 0.4rem;
+  white-space: nowrap;
 }
 
 .badge-html {
@@ -229,8 +235,54 @@ pre code {
   color: #0e1e25;
 }
 
+.badge-redux {
+  background: #764abc;
+  color: #fff;
+}
+
 .b-2x {
   font-size: 0.9rem;
+}
+
+.wave-hi {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media only screen and (max-width: 600px) {
