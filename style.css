@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Licorice&family=Pacifico&family=Rubik+Beastly&family=Sacramento&family=Shizuru&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Josefin+Sans&display=swap");
+
 :root {
   --primary: #d97706;
 }
@@ -66,7 +66,11 @@ a.logo {
 }
 
 .home.hero {
-  margin: 5rem 0;
+  margin: 3rem 0;
+}
+
+.hero {
+  padding: 1rem;
 }
 
 .hero h1,
