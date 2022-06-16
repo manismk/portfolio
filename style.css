@@ -67,6 +67,18 @@ a.logo {
 
 .home.hero {
   margin: 3rem 0;
+  text-align: center;
+}
+
+.home img {
+  width: 13rem;
+
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px rgba(252, 211, 77, 0.75);
+}
+
+.home img:hover {
+  transform: scale(1.02);
 }
 
 .hero {
