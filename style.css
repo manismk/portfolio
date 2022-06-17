@@ -72,13 +72,12 @@ a.logo {
 
 .home img {
   width: 13rem;
-
   border-radius: 50%;
-  box-shadow: 0px 0px 8px 3px rgba(252, 211, 77, 0.75);
 }
 
 .home img:hover {
-  transform: scale(1.02);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 8px 3px rgba(252, 211, 77, 0.75);
 }
 
 .hero {
@@ -173,9 +172,31 @@ a.logo {
 ol li {
   list-style: none;
 }
+
+.grid {
+  margin: 1rem auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.article-vd.container {
+  padding: 0;
+  margin: 1rem auto;
+}
+
 .article {
   padding: 1rem;
 }
+
+.article-vd:nth-child(even) {
+  background-color: #fcd34d;
+}
+.article-vd:nth-child(odd) {
+  background-color: #fef3c7;
+}
+
 .article:nth-child(even) .container {
   background-color: #fcd34d;
 }
@@ -185,6 +206,14 @@ ol li {
 .article h2 {
   margin: 0.8rem 0;
 }
+
+.article-vd embed {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 p a {
   color: var(--primary);
 }
@@ -314,5 +343,14 @@ pre code {
 @media only screen and (max-width: 600px) {
   .navigation {
     flex-direction: column;
+  }
+
+  .article.container,
+  .grid {
+    margin: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
